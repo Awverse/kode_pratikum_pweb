@@ -1,0 +1,99 @@
+:root {
+    --bg: #f8fafc;
+    --surface: #ffffff;
+    --primary: #dc2626; /* Merah untuk bug */
+    --success: #16a34a; /* Hijau untuk fixed */
+    --text: #1e293b;
+    --muted: #64748b;
+    --radius: 12px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    background: var(--surface);
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.eyebrow {
+    color: var(--muted);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 28px;
+    color: var(--text);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: var(--surface);
+    padding: 24px;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.mode-bug {
+    border-top: 4px solid var(--primary); 
+}
+
+.mode-fix {
+    border-top: 4px solid var(--success); 
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.code-preview {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    padding: 12px;
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.instruction-panel {
+    background: #eff6ff;
+    border: 2px dashed #3b82f6;
+    padding: 20px;
+    border-radius: var(--radius);
+}
+
+.instruction-panel h3 {
+    color: #1d4ed8;
+    margin-top: 0;
+}
+
+.instruction-panel ol {
+    margin-bottom: 0;
+    line-height: 1.6;
+}

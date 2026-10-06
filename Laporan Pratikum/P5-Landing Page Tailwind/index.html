@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi - Responsive Landing Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <header class="fixed w-full z-20 top-0 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between p-4">
+            <a href="#" class="flex items-center space-x-3">
+                <span class="text-xl font-bold text-blue-700">SI-Web Unja</span>
+            </a>
+            
+            <div class="flex md:order-2 space-x-3">
+                <a href="#daftar" class="text-white bg-emerald-600 hover:bg-emerald-700 font-medium rounded-lg text-sm px-4 py-2 transition shadow-sm">Ikuti Praktikum</a>
+            </div>
+
+            <nav class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" aria-label="Menu Utama">
+                <ul class="flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 font-medium">
+                    <li><a href="#" class="block py-2 px-3 text-blue-600 md:p-0">Beranda</a></li>
+                    <li><a href="#fitur" class="block py-2 px-3 text-slate-600 hover:text-blue-600 md:p-0">Fitur</a></li>
+                    <li><a href="#materi" class="block py-2 px-3 text-slate-600 hover:text-blue-600 md:p-0">Materi</a></li>
+                    <li><a href="#daftar" class="block py-2 px-3 text-slate-600 hover:text-blue-600 md:p-0">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-24 pb-16">
+        <section class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">Program Studi Sistem Informasi</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
+                    Bangun Halaman Web Responsif untuk Semua Perangkat.
+                </h1>
+                <p class="text-slate-600 text-lg leading-relaxed">
+                    Pelajari Flexbox, CSS Grid, media query, dan prinsip <em>mobile-first</em> melalui studi kasus landing page sederhana.
+                </p>
+                <div>
+                    <a href="#daftar" class="inline-block bg-emerald-600 text-white font-semibold px-6 py-3 rounded-xl shadow-md hover:bg-emerald-700 transition">Mulai Eksplorasi</a>
+                </div>
+            </div>
+
+            <div class="bg-slate-900 p-6 rounded-2xl shadow-xl text-white">
+                <div class="h-4 w-24 bg-slate-700 rounded-full mb-4"></div>
+                <div class="h-32 bg-gradient-to-r from-blue-600 to-emerald-500 rounded-xl mb-4 flex items-center justify-center font-bold text-lg">
+                    Viewport Preview
+                </div>
+                <div class="grid grid-cols-3 gap-3">
+                    <div class="h-10 bg-slate-800 rounded-lg"></div>
+                    <div class="h-10 bg-slate-800 rounded-lg"></div>
+                    <div class="h-10 bg-slate-800 rounded-lg"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fitur" class="max-w-7xl mx-auto px-4 py-12">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl font-bold text-slate-900">Fokus Pembelajaran Utama</h2>
+                <p class="text-slate-600">Pilar penting dalam pengembangan web modern.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <article class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <h3 class="font-bold text-lg text-blue-700 mb-2">01. HTML Semantik</h3>
+                    <p class="text-slate-600 text-sm">Menyusun struktur dokumen web yang bermakna dan ramah aksesibilitas.</p>
+                </article>
+                <article class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <h3 class="font-bold text-lg text-blue-700 mb-2">02. CSS Fundamental</h3>
+                    <p class="text-slate-600 text-sm">Mengatur tata letak menggunakan Box Model, Flexbox, dan CSS Grid responsif.</p>
+                </article>
+                <article class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <h3 class="font-bold text-lg text-blue-700 mb-2">03. JavaScript Interaktif</h3>
+                    <p class="text-slate-600 text-sm">Memberikan logika interaksi dinamis dan manipulasi DOM pada sisi *frontend*.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="materi" class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2 bg-white p-8 rounded-2xl shadow-sm border border-slate-100 space-y-4">
+                <h2 class="text-2xl font-bold text-slate-900">Mengapa Desain Responsif Itu Penting?</h2>
+                <p class="text-slate-600 leading-relaxed">
+                    Pengguna mengakses internet melalui berbagai macam perangkat dengan ukuran layar yang berbeda—mulai dari ponsel cerdas berukuran kecil, tablet, hingga monitor desktop berukuran besar. Pendekatan <em>mobile-first</em> memastikan website tetap nyaman dibaca tanpa mengalami masalah *horizontal scroll*.
+                </p>
+                <ul class="list-disc pl-5 space-y-2 text-slate-600">
+                    <li>Struktur kode HTML tetap ringkas dan konsisten[cite: 14].</li>
+                    <li>Tata letak beradaptasi secara otomatis menggunakan *breakpoint*.</li>
+                    <li>Meningkatkan pengalaman pengguna (*User Experience*) secara menyeluruh.</li>
+                </ul>
+            </div>
+
+            <aside id="daftar" class="bg-blue-900 text-white p-8 rounded-2xl shadow-sm flex flex-col justify-between space-y-6">
+                <div>
+                    <h3 class="text-xl font-bold mb-2">Informasi Akademik</h3>
+                    <p class="text-blue-200 text-sm">Mata Kuliah Pemrograman Berbasis Web (ISP234) Program Studi Sistem Informasi, Fakultas Sains dan Teknologi, Universitas Jambi.</p>
+                </div>
+                <div class="bg-blue-800/50 p-4 rounded-xl border border-blue-700 text-sm space-y-2">
+                    <p class="font-semibold">Dosen Pengampu:</p>
+                    <p class="text-blue-200">Pariyadi S.Kom., M.Kom.</p>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t border-slate-200 py-8 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 Program Studi Sistem Informasi - Universitas Jambi.</p>
+    </footer>
+
+</body>
+</html>
